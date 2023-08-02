@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     downloadButton.addEventListener("click", function () {
         const textToSave = textarea.value;
         const blob = new Blob([textToSave], { type: "text/plain;charset=utf-8" });
-        const filename = "notepad.txt";
+        const filename = "data.txt";
 
         if (navigator.msSaveBlob) {
             navigator.msSaveBlob(blob, filename);
